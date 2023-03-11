@@ -50,16 +50,11 @@
       opacity: 1;
     }
   }
-.poptext {
-    color: var(--color-third);
-    font-family: var(--font-main);
-    text-align: center;
 
-
-}
 #poptitle {
     font-size: 3em;
     font-family: var(--font-second);
+    text-align: center;
     
 }
 #popl1 {
@@ -67,11 +62,17 @@
     color: #181818;
     margin-top: 0;
     margin-bottom: 0.2em;
+    color: var(--color-main);
+    font-family: var(--font-main);
+    text-align: center;
 }
 #popl2 {
     font-size: 2em;
     font-weight: 200;
     margin-bottom: 0.2em;
+    color: var(--color-third);
+    font-family: var(--font-main);
+    text-align: center;
 }
 #ageline {
     width: 100px;
