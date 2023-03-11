@@ -1,14 +1,20 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600&family=Oswald:wght@300&display=swap');
+:root {
+--color-main: #181818;
+--color-second: #fff;
+--color-third: #8a00ff;
 
-
+--font-main: 'Oswald', sans-serif;
+--font-second: 'Baloo Thambi 2';
+}
 /* popup style */
 #popup {
-    background-color: white;
+    background-color: var(--color-second);
     border-radius: 10px;
     padding: 20px;
-    color: #8a00ff;
+    color: var(--color-third);
     box-shadow: 0 0 20px;
     z-index: 9999;
     display: flex;
@@ -16,9 +22,7 @@
     justify-content: center;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     flex: 1;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-top: 20%;
+    margin: 15% 5%;
 
 
   }
@@ -47,15 +51,15 @@
     }
   }
 .poptext {
-    color: #8a00ff;
-    font-family: 'Oswald', sans-serif;
+    color: var(--color-third);
+    font-family: var(--font-main);
     text-align: center;
 
 
 }
 #poptitle {
     font-size: 3em;
-    font-family: 'Baloo Thambi 2';
+    font-family: var(--font-second);
     margin-bottom: 0.2em;
 }
 #popl1 {
@@ -71,7 +75,6 @@
 }
 #ageline {
     width: 100px;
-    height: 100px;
     align-self: center;
 }
 
@@ -80,18 +83,18 @@
     top: 20px;
     right: 20px;
     background: linear-gradient(180deg,#d19cff 0%,#b662ff 30%, #9b28ff 65%, #8a00ff 100%);
-    border: 0px solid #8a00ff;
-    color: #fff;
+    border: 0px solid var(--color-third);
+    color: var(--color-second);
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 18px;
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 /* main page style */
 body {
-    background-color: #181818;
+    background-color: var(--color-main);
     width: auto;
     height: auto;
 
@@ -105,29 +108,29 @@ body {
 }
 #titulo {
     display: none;
-    background-color: white;
+    background-color: var(--color-second);
     border-radius: 10px;
-    color: #9b28ff;
+    color: var(--color-third);
     text-align: center;
     line-height: 100px;
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: var(--font-second);
     letter-spacing: 3px;
     animation: scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both 
 }
 @-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}
 #container {
     display: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-main);
     letter-spacing: 3px;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-second);
     border-radius: 10px;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: 9px 5px 15px 5px #000000;
+    box-shadow: 9px 5px 15px 5px var(--color-main);
     animation: scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both
 
 }
@@ -135,14 +138,14 @@ body {
 #resultado {
     display: none;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-second);
     border-radius: 10px;
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: 9px 5px 15px 5px #000000;
+    box-shadow: 9px 5px 15px 5px var(--color-main);
     animation: scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-center .7s cubic-bezier(.25,.46,.45,.94) both
 } 
 @-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}
@@ -152,44 +155,89 @@ body {
     display: inline-block;
     white-space: nowrap;
     backface-visibility: hidden;
-    color: white;
+    color: var(--color-second);
     text-align: center;    
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-main);
+    font-size: 1rem;
     letter-spacing: 3px; 
     margin-top: 20px;
     border-radius: 8px;
     height: 30px;
     background: linear-gradient(180deg,#d19cff 0%,#b662ff 30%, #9b28ff 65%, #8a00ff 100%);
-    border: 0px solid #8a00ff;   
+    border: 0px solid var(--color-third);   
     box-shadow: inset 0px 1px 3px rgba(255,255,255,.4);
-    color: #fff;  
+    color: var(--color-second);  
 }
 input::placeholder{
-    color: #181818;
+    color: var(--color-main);
 }
 
 #age {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-main);
     letter-spacing: 3px;
-    color: #8a00ff;
-    font-size: 1.5em;
+    color: var(--color-third);
+    font-size: 1.5rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 #todayis {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-main);
     letter-spacing: 3px;
-    color: #181818;
-    font-size: 1.5em;
+    color: var(--color-main);
+    font-size: 1.5rem;
     margin-top: 0;
 }
 #puns {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-main);
     letter-spacing: 3px;
-    color: #181818;
+    color: var(--color-main);
     font-weight: 300;
-    font-size: 2em;
+    font-size: 2rem;
     margin-top: 0;
     margin-bottom: 0;
 
+}
+
+@media (max-width: 500px) {
+
+    #popup {
+        padding: 10px; 
+        margin: 5% 5%;
+    }
+
+    #poptitle {
+        font-size: 2rem;
+        padding-top: 5px;
+        line-height: auto;
+    }
+    #popl1 {
+        font-size: 1rem;
+
+    }
+    #popl2 {
+        font-size: 1.5rem;
+    }
+    #ageline {
+        width: 60px;
+
+    }
+    #body {
+        margin: 5% 5%;
+    }
+    #titulo {
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
+    #calcular {
+        font-size: 0.7rem;
+    }
+    #puns {
+        font-size: 1.5rem;
+    }
+    #age {
+        font-size: 1rem;
+    }
+    #todayis {
+        font-size: 1rem;
+    }
 }
