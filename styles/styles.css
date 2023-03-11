@@ -60,7 +60,7 @@
 #poptitle {
     font-size: 3em;
     font-family: var(--font-second);
-    margin-bottom: 0.2em;
+    
 }
 #popl1 {
     font-size: 1.5em;
@@ -80,8 +80,8 @@
 
 #fechar {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
     background: linear-gradient(180deg,#d19cff 0%,#b662ff 30%, #9b28ff 65%, #8a00ff 100%);
     border: 0px solid var(--color-third);
     color: var(--color-second);
@@ -204,11 +204,14 @@ input::placeholder{
         padding: 10px; 
         margin: 5% 5%;
     }
+    #fechar {
+        font-size: 0.7rem;
+    }
 
     #poptitle {
         font-size: 2rem;
         padding-top: 5px;
-        line-height: auto;
+        line-height: 40px;
     }
     #popl1 {
         font-size: 1rem;
@@ -219,6 +222,8 @@ input::placeholder{
     }
     #ageline {
         width: 60px;
+        margin: 0;
+        padding: 0;
 
     }
     #body {
