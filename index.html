@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Age Explorer</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/icons8-age-timeline-ios-16-filled-16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons8-age-timeline-ios-16-filled-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./assets/icons8-age-timeline-ios-16-filled-96.png">
+
+
+
+</head>
+<body>
+
+    <div id="popup">
+        <h2 id="poptitle" class="poptext">Welcome to The Age Explorer!</h2><hr>
+        <img id="ageline" src="./assets/icons8-age-timeline-100.png">
+        <p id="popl1" class="poptext"><strong>Ready to find out how many trips around the sun you've completed?</strong></p>
+        <p id="popl2" class="poptext">Enter your birthdate and let our calculator do the math to tell you exactly how many
+             <strong>years</strong>,<strong> months</strong>, and <strong>days</strong> you've been <strong>rocking</strong> this <strong>planet</strong>!</p>
+        <button id="fechar" onclick="fecharPopUp()">X</button>
+    </div>
+    <div id="main">
+    <h1 id="titulo">THE AGE EXPLORER</h1>
+    <div id='container'>
+        <input class="inptPH" type="number" id="day" placeholder="Day">
+        <input class="inptPH" type="number" id="month" placeholder="Month">
+        <input class="inptPH" type="number" id="year" placeholder="Year"><br>
+        <input type="button" id="calcular" value="Discover your age-olution!">
+    </div>
+    <div id='resultado'>
+        <p id="puns"> </p>
+        <p id="age"> </p>
+        <p id="todayis"></p>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
