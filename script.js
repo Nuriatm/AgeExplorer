@@ -69,3 +69,4 @@ function fecharPopUp() {
     document.getElementById("container").style.display = "block";
 
 }
+btn.addEventListener("click", verificaDados)
