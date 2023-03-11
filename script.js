@@ -17,12 +17,20 @@ function verificaDados(){
         alert("Please enter your Date of Birth properly!");
         return
     }
+    let inputDate = new Date(`${birthMonth.value}/${birthDay.value}/${birthYear.value}`);
+    if (inputDate > today) {
+        alert("Please enter a valid Date of Birth");
+        return;
+    }
+    
+
     const days = birthDay.value;
     const month = birthMonth.value;
     const year = birthYear.value;
 
     defineMaxdays(days, month, year)
 }
+
 
 function defineMaxdays(days, month, year){
     let maxDays = new Date(year, month, 0).getDate();
@@ -38,8 +46,10 @@ function defineMaxdays(days, month, year){
         ageYears--;
         ageMonths += 12;
     }
+   
         exibeResultado(ageYears, ageMonths, ageDays)
 }
+
 
 function getAgePun(ageYears) {
     if (ageYears >= 0 && ageYears <= 2) return "Tiny human, big evolution.";
@@ -69,4 +79,7 @@ function fecharPopUp() {
     document.getElementById("container").style.display = "block";
 
 }
+
 btn.addEventListener("click", verificaDados)
+
+
